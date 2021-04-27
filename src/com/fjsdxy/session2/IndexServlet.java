@@ -31,6 +31,7 @@ public class IndexServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		// 解决乱码问题
 				response.setContentType("text/html;charset=utf-8");
+				response.getWriter().print("<h1>11111111</h1>");
 		         // 创建或者获取保存用户信息的Session对象
 				HttpSession session = request.getSession();
 				User user = (User) session.getAttribute("user");

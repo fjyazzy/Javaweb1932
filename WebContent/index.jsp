@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
 <title>JAVAWEB程序设计作业列表</title>
 </head>
 <body>
+<%@ include file="includes/header.jsp"%>
 <h1>《JAVAWEB程序设计作业列表》</h1>
 <ul>
 <li>第一章：网页开发基础</li>
@@ -35,7 +35,15 @@
 </li>
 
 
+
 </ul>
+
+
+<%@ include file="includes/footer.jsp"%>
+
+
+
+
 
 </body>
 </html>

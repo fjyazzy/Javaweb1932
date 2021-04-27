@@ -12,6 +12,7 @@
 </head>
 <body class="main">
 	<!-- 1.网上书城顶部 start -->
+	<img src='images/bt.png'>
 <div id="divhead">
 	<table cellspacing="0" class="headtable">
 		<tr>
