@@ -1,0 +1,32 @@
+实训项目:Mysql的配置和使用
+实训内容：
+一、下载Mysql
+
+二、安装配置
+1.以管理员身份打开命令行
+2.配置环境变量PATH，加上e:\mysql8\bin
+2. 转到mysql8的bin目录下
+3.mysqld --install   ##安装mysql的服务
+4.mysqld --initialize --console   ##初始化mysql，在这里，初始化会产生一个随机密码,如下图框框所示，记住这个密码
+aqgekyK6qd%<
+5.net start mysql   ##开启mysql的服务
+6.mysql -u root -p  ##登录Mysql,密码：aqgekyK6qd%<
+7.alter user 'root'@'localhost' identified by 'root';  #修改密码为root
+8.设置环境变量，将E:\mysql8\bin加入path中
+
+###=======创建库=创建表=====================
+CREATE DATABASE book; ##创建数据库
+SHOW DATABASES;       ##查看数据库
+USE book;             ##打开数据库
+create table user(id int,username varchar(200),passwd varchar(200));
+SHOW TABELS
+INSERT INTO user (id,username,passwd) VALUES (1,'admin','123');
+
+###=========JAVA 连接======================
+https://dev.mysql.com/downloads/connector/j/
+
+三、下载Navicat for mysql
+1、修改认证办法
+alter user root@localhost identified with mysql_native_password by 'root';
+2、连接mysql服务器
+3、创建库和数据表

@@ -1,0 +1,48 @@
+实训题目：新闻展示页面
+实训步骤：
+
+一、新建数据表并添加数据
+
+1、打开Navicat,连接mySQL 数据库
+2、新建表NewsList,包含id(int),bt(varchar 200),nr(varchar 2000)
+3、在表中输入5行新闻标题和内容
+
+二、编写新闻目录页newslist.jsp
+
+核心代码如下：
+	String sql = "select * from newslist";
+	rs = stmt.executeQuery(sql);
+	// 5. 操作ResultSet结果集
+	out.println("<ul>");
+	while (rs.next()) {
+		int id = rs.getInt("id"); // 通过列名获取指定字段的值
+		String bt = rs.getString("bt");
+		out.println("<li><a href=newsdetail.jsp?id="+id + ">"+ bt  + "</a>");
+	}
+	out.println("</ul>");
+
+三、编写新闻详细页newsdetail.jsp
+
+核心代码如下：
+
+	String id=request.getParameter("id");
+	String sql = "select * from newslist where id=" +id;
+	rs = stmt.executeQuery(sql);
+	// 5. 操作ResultSet结果集
+	out.println("<a href=Newslist.jsp>回到列表</a>");
+	if(rs.next()){
+		String bt = rs.getString("bt");
+		String nr = rs.getString("nr");
+		out.println("<h1>"+ bt  + "</h1>");
+		out.println("<p>"+ nr  + "<p>");		
+	}
+	else{
+		out.println("新闻列表号错误！");
+	}
+
+要求:
+
+1）完成建立数据表
+2）程序调试通过
+3）使用CSS适当美化页面
+

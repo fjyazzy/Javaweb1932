@@ -6,19 +6,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 public class JDBCUtils {
 	// 加载驱动，并建立数据库连接
-	public static Connection getConnection() throws SQLException,
-				ClassNotFoundException {
+	public static Connection getConnection() throws SQLException,ClassNotFoundException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		// 2.通过DriverManager获取数据库连接
 		String url = "jdbc:mysql://localhost:3306/jdbc?serverTimezone=UTC";
 		String username = "root";
 		String password = "root";
-			Connection conn = DriverManager.getConnection(url, username, 
-					password);
+			Connection conn = DriverManager.getConnection(url, username,password);
 			return conn;
 		}
-		// 关闭数据库连接，释放资源
-		public static void release(Statement stmt, Connection conn) {
+	
+	// 关闭数据库连接，释放资源
+	public static void release(Statement stmt, Connection conn) {
 			if (stmt != null) {
 				try {
 					stmt.close();
@@ -36,8 +35,8 @@ public class JDBCUtils {
 				conn = null;
 			}
 		}
-	     public static void release(ResultSet rs, Statement stmt, 
-	     		Connection conn){
+	  
+	public static void release(ResultSet rs, Statement stmt,Connection conn){
 			if (rs != null) {
 				try {
 					rs.close();

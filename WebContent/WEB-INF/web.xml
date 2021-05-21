@@ -381,7 +381,7 @@
   </filter>
   <filter-mapping>
     <filter-name>MyFilter01</filter-name>
-    <url-pattern>/MyFilter01</url-pattern>
+    <url-pattern>/MyServlet2</url-pattern>
   </filter-mapping>
   <filter>
     <display-name>MyFilter02</display-name>
@@ -390,7 +390,7 @@
   </filter>
   <filter-mapping>
     <filter-name>MyFilter02</filter-name>
-    <url-pattern>/MyFilter02</url-pattern>
+    <url-pattern>/MyServlet2</url-pattern>
   </filter-mapping>
   <filter>
     <display-name>MyFilter03</display-name>

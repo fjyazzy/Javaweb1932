@@ -33,8 +33,27 @@
 
 	</ol>
 </li>
+<li>第四章：请求和响应 </li>
+<li>
+	<ol>
+		<li>TestServlet01:<a href="/JWJ1932/TestServlet01">TestServlet01</a></li>
 
+	</ol>
+</li>
+<li>第五章：会话及会话技术 </li>
+<li>
+	<ol>
+		<li>TestServlet01:<a href="/JWJ1932/TestServlet01">TestServlet01</a></li>
 
+	</ol>
+</li>
+<li>第六章：JSP技术 </li>
+<li>
+	<ol>
+		<li>TestServlet01:<a href="/JWJ1932/TestServlet01">TestServlet01</a></li>
+
+	</ol>
+</li>
 
 </ul>
 

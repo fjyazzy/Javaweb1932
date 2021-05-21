@@ -1,0 +1,9 @@
+实训项目:整合Hbuilder与Eclipse工具
+实训内容：
+实训1：下载Hbuilder
+实训2：在Hbuilder中新建项目，项目文件夹指向Eclicpse的webcintent目录
+实训3：配置Eclipse实现自动更新目录下的文件。
+      Window->Preferences->General->Workspace->勾选Refresh using native hocks or polling
+实训4：在Hubuilder中新建网页文件，在Eclipse中测试运行。
+实训5：搭建一个静态图书商城网站，实现图书分类展示，包含图示详情页。
+
