@@ -1,0 +1,19 @@
+实训题目：新闻展示页面
+实训步骤：
+
+一、新建数据表并添加数据
+
+1、打开Navicat,连接mySQL 数据库
+2、新建表grjj,包含id(int),xm(varchar 200),ah(varchar 100),jj(varchar 1000)
+
+二、编写表单grjjform.jsp
+
+三、编写数据添加程序grjjtj.jsp
+(核心代表可参照tj.jsp）
+
+实训要求:
+
+1）完成建立数据表
+2）程序调试通过
+3）MYsql数据库中可以查询到添加的数据
+

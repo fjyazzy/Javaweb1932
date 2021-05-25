@@ -20,12 +20,19 @@ public class Example02 {
 				// 执行的SQL语句
 				String sql = "INSERT INTO users(name,password,email,birthday)"
 						+ "VALUES(?,?,?,?)";
+				
+//				String sql = "INSERT INTO grjj(xm,ah,jj) VALUES(?,?,?)";
+				
 	             // 创建执行SQL语句的PreparedStatement 对象
 				preStmt = conn.prepareStatement(sql);
-				preStmt.setString(1, "zl");
-				preStmt.setString(2, "123456");
-				preStmt.setString(3, "zl@sina.com");
-				preStmt.setString(4, "1789-12-23");
+				
+				//String xm=request.getParameter("xm");
+				//preStmt.setString(1, xm);
+				
+				preStmt.setString(1, "zl11111");
+				preStmt.setString(2, "123456111");
+				preStmt.setString(3, "zl111@sina.com");
+				preStmt.setString(4, "2001-12-23");
 				preStmt.executeUpdate();
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
